@@ -58,17 +58,17 @@ void loop()
 
   
     if(lux<300){
-    digitalWrite(nivel1,HIGH);
+    digitalWrite(nivel1,LOW);
     digitalWrite(nivel2,LOW);
     digitalWrite(nivel3,LOW);
     digitalWrite(nivel4,LOW);
-    digitalWrite(nivel5,LOW);
+    digitalWrite(nivel5,HIGH);
     }
     if(lux>300&&lux<390){
     digitalWrite(nivel1,LOW);
-    digitalWrite(nivel2,HIGH);
+    digitalWrite(nivel2,LOW);
     digitalWrite(nivel3,LOW);
-    digitalWrite(nivel4,LOW);
+    digitalWrite(nivel4,HIGH);
     digitalWrite(nivel5,LOW);
     }
     if(lux>390&&lux<480){
@@ -80,9 +80,9 @@ void loop()
     }
     if(lux>570&&lux<660){
     digitalWrite(nivel1,LOW);
-    digitalWrite(nivel2,LOW);
+    digitalWrite(nivel2,HIGH);
     digitalWrite(nivel3,LOW);
-    digitalWrite(nivel4,HIGH);
+    digitalWrite(nivel4,LOW);
     digitalWrite(nivel5,LOW);
     }
     if(lux>660&&lux<750){
@@ -93,7 +93,7 @@ void loop()
     digitalWrite(nivel5,HIGH);
     }
   if(lux>750){
-    digitalWrite(nivel1,LOW);
+    digitalWrite(nivel1,HIGH);
     digitalWrite(nivel2,LOW);
     digitalWrite(nivel3,LOW);
     digitalWrite(nivel4,LOW);
